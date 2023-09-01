@@ -1,6 +1,6 @@
 # PDF-PyBot
 Developed a Python GUI application using tkinter for PDF manipulation and merging. Users can select, customize pages, and merge PDFs with custom input validation. Implemented user-friendly interactions, PDF library integration, and organized code modularly.
-br
+
 # PDF Manipulation and Merging Tool
 
 A graphical user interface (GUI) application developed in Python using the tkinter library for PDF manipulation and merging.
