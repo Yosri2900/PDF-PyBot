@@ -44,7 +44,6 @@ def select_file():
                     "Customized" : []
                 }
                 table.insert("", "end", values=(file, ""))
-    print(f'\n{selected_files}  {len(selected_files)}')
 
 def count_pdf_pages(pdf_path):
     try:
@@ -80,7 +79,6 @@ def edit_custom_pages(event):
             if is_valid_page_range(customization, pdf_name):
                 selected_files[pdf_name]['Customized'] = customization
                 table.item(selected_item, values=(pdf_name, new_custom_pages))
-            print(f'\n{selected_files[pdf_name]}')
 
 def parse_input(input_text: str) -> list:
     if not input_text: return []
@@ -97,7 +95,6 @@ def parse_input(input_text: str) -> list:
                 if start_page >= 0 and end_page >= 0:
                     pages.extend(range(start_page, end_page + 1))
             except ValueError as e:
-                # print(f'{e}: Error at 114')
                 pass
         else:
             try:
@@ -105,7 +102,6 @@ def parse_input(input_text: str) -> list:
                 if page >= 0:
                     pages.append(page)
             except ValueError as e:
-                # print(f'{e}: error at 125')
                 pass
     pages.sort()
     return pages
@@ -156,7 +152,6 @@ def merge_pdfs():
     messagebox.showinfo("Success", f"All pdf merged! Files located in {os.path.abspath(name)}")
     table.delete(*table.get_children())
     selected_files.clear()
-    print(f'\n selected_files: {selected_files}')
     merged_name_entry.delete(0, END)
 
 
