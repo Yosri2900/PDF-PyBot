@@ -25,7 +25,7 @@ A graphical user interface (GUI) application developed in Python using the tkint
 ## Dependencies
 
 - tkinter (included in most Python installations)
-- PyPDF2 (for PDF manipulation)
+- PyPDF3 (for PDF manipulation)
 
 ## Future Enhancements
 
