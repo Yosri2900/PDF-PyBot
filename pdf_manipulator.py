@@ -116,8 +116,8 @@ def validate_merged_file_name(merged_pdf_name: str) -> bool:
 
 def merge_pdfs():
 
-    if len(selected_files) < 2:
-        messagebox.showerror("Invalid", "There must be at least 2 pdf files!")
+    if len(selected_files) < 1:
+        messagebox.showerror("Invalid", "There must be at least 1 pdf files!")
         return
     
     name = merged_name_entry.get().strip()
